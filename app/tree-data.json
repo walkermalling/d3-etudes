@@ -1,0 +1,22 @@
+{
+  "name" : "root",
+  "children" :[
+    {"name" : "Amazon", "url" : "http://www.amazon.com"},
+    {"name" : "Wikipedia", "url" : "http://en.wikipedia.org/wiki/Main_Page"},
+    {"name" : "Hacker News", "url" : "https://news.ycombinator.com/"},
+    {"name" : "CodeFellows", "children" : [
+      {"name" : "VisuAlgo", "url" : "http://www.comp.nus.edu.sg/~stevenha/visualization/index.html"},
+      {"name" : "Express API Reference", "url" : "http://expressjs.com/api.html"},
+      {"name" : "Mongo Shell Methods", "url" : "http://docs.mongodb.org/manual/reference/method/"},
+      {"name" : "Research", "children" : [
+        {"name" : "Decorator Pattern", "url" : "http://dailyjs.com/2012/10/08/decorator/"},
+        {"name" : "Binary Tree Structure", "url" : "http://www.i-programmer.info/programming/javascript/1899-javascript-data-structures-the-binary-tree.html"}
+      ]},
+      {"name" : "Curriculum", "children" : [
+        {"name" : "Gitter#javascript", "url" : "https://gitter.im/codefellows/javascript"},
+        {"name" : "b20-notes", "url" : "https://github.com/codefellows/sea-b20-notes"},
+        {"name" : "GitBoook", "url" : "http://fsje.codefellows.org/"}
+      ]}
+    ]}
+  ]
+}
