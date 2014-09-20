@@ -11,7 +11,7 @@ var svg = d3.select('body')
   .style('border', '1px solid #000');
 
 // load our graph data
-d3.json('data.json', function(error, json) {
+d3.json('data/data.json', function(error, json) {
   if (error) {
     alert('Error loading data file');
   } else {
@@ -28,8 +28,12 @@ function drawForceGraph(dataset) {
   var force = d3.layout.force()
                        .nodes(dataset.nodes)
                        .links(dataset.edges)
+                       .alpha(.1)
                        .linkDistance([50])
-                       .charge([-100])
+                       .linkStrength(1)
+                       .charge([-1200])
+                       .friction(0)
+                       .gravity(0)
                        .size([width,height])
                        .start();
 

@@ -20,7 +20,7 @@ module.exports = function(grunt){
       dev: {
         expand: true,
         cwd: 'app/',
-        src: ['*.html', 'js/**/*.js', 'icons/**/*.*', '*.png', '*.json' ],
+        src: ['*.html', 'js/**/*.js', 'icons/**/*.*', '*.png', 'data/*.json' ],
         dest: 'dist/',
         filter: 'isFile'
       }
