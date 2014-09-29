@@ -54,12 +54,12 @@ module.exports = function(grunt){
   });
 
   // register tasks
-  grunt.registerTask('default', [ 'clean:dev', 'copy:dev']);
+  // grunt.registerTask('default', [ 'clean:dev', 'copy:dev']);
 
   grunt.registerTask('build:dev', ['clean:dev', 'copy:dev']);
 
   grunt.registerTask('test', ['simplemocha']);
 
-  grunt.registerTask('watch:dev', ['build:dev','express:dev', 'watch:express']);
+  grunt.registerTask('default', ['build:dev','express:dev', 'watch:express']);
 
 };
