@@ -130,7 +130,6 @@ var node = svg.selectAll(".node")
       return "node " + (d.type || "");
     })
     .on("click", function(d){
-      console.log(d);
       if( d.type ){
         d3.select(this).select("circle")
         .attr("class", "selected")
